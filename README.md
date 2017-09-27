@@ -8,6 +8,7 @@ Euclid circumference drawer with Unity Engine. Single scene project. Full keyboa
 - [SPACE]
 - [SHIFT + SPACE]
 - [1] [2] ... [9] [0]
+- [Q]
 - [R]
 - [W] [E]
 - [<-] [->] [D] [F]
