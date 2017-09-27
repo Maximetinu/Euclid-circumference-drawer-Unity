@@ -21,3 +21,5 @@ Euclid circumference drawer with Unity Engine. Single scene project. Full keyboa
 3. Select a target platform and build
 4. Launch!
 
+## License
+[The Unlicense](http://unlicense.org/). Software released into the public domain, no rights reserved.
