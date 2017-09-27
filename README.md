@@ -1,5 +1,5 @@
-# Euclid-circumference-simulator-Unity
-Euclid circumference simulator with Unity Engine. Single scene project. Full keyboard input, no UI.
+# Euclid circumference drawer Unity
+Euclid circumference drawer with Unity Engine. Single scene project. Full keyboard input, no UI; just another casual euclid circumference simulator.
 
 ## Play it!
 [http://miguelmedinaballesteros.com/euclid/](http://miguelmedinaballesteros.com/euclid/)
@@ -11,6 +11,9 @@ Euclid circumference simulator with Unity Engine. Single scene project. Full key
 - [R]
 - [W] [E]
 - [<-] [->] [D] [F]
+
+## Screenshot
+![Euclid circumference](https://github.com/Maximetinu/Euclid-circumference-simulator-Unity/blob/master/euclid-screenshot.png?raw=true)
 
 ## How to build
 1. Open repository folder as Unity project
