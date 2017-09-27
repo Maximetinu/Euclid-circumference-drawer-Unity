@@ -16,6 +16,10 @@ Euclid circumference drawer with Unity Engine. Single scene project. Full keyboa
 ## Screenshot
 ![Euclid circumference](https://github.com/Maximetinu/Euclid-circumference-simulator-Unity/blob/master/euclid-screenshot.png?raw=true)
 
+## Downloads Builds
+- [Standalone PC](https://drive.google.com/file/d/0B1v_vbHwXsjGV3ZrMmhra3RVdTA/view?usp=sharing)
+- [WebGL](https://drive.google.com/file/d/0B1v_vbHwXsjGVjhCUUtvb0ZDbE0/view?usp=sharing)
+
 ## How to build
 1. Open repository folder as Unity project
 2. File > Build settings
