@@ -15,11 +15,20 @@ public class DrawText : MonoBehaviour {
 
 	[HideInInspector]
 	public List<Text> vertexTexts;
+	[HideInInspector]
+	public Text iText;
 
 	public void Reset() {
-		for (int k = 0; k < transform.childCount; k++)
+		for (int k = 1; k < transform.childCount; k++)
 			Destroy(transform.GetChild(k).gameObject);
 		this.Start();
+	}
+
+	private void Awake() {
+		iText = Instantiate(textPrefab, transform).gameObject.GetComponent<Text>();
+		iText.gameObject.name = "Iteration";
+		iText.color = defaultColor;
+		iText.enabled = false;
 	}
 
 	void Start() {
@@ -30,7 +39,7 @@ public class DrawText : MonoBehaviour {
 		decimal angleGap = 360.0m / vertexNumber;
 
 		for (decimal w = 0.0m; w <= (360m - 0.000001m); w += angleGap) {
-			GameObject newText = Instantiate(this.transform.GetChild(0).gameObject);
+			GameObject newText = Instantiate(this.transform.GetChild(1).gameObject);
 			newText.transform.SetParent(this.transform);
 			newText.GetComponent<RectTransform>().localPosition = Utils.PointOnCircumferencScreen(screenRadious, (double)w, Vector3.zero);
 			newText.name = "Text " + vertexTexts.Count;
@@ -39,9 +48,8 @@ public class DrawText : MonoBehaviour {
 			newText.GetComponent<Text>().color = Color.black;
 			newText.GetComponent<Text>().enabled = true;
 		}
-
-		Destroy(this.transform.GetChild(0).gameObject);
-
+		
+		Destroy(this.transform.FindChild("Text(Clone)").gameObject);
 	}
 
 	public void HighlightText(int i) {
@@ -58,5 +66,6 @@ public class DrawText : MonoBehaviour {
 				vertexTexts[k].color = nextColor;
 				vertexTexts[k].fontStyle = FontStyle.Bold;
 			};
+		iText.text = Utils.iterations.ToString();
 	}
 }

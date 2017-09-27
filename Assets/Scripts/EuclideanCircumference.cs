@@ -106,6 +106,10 @@ public class EuclideanCircumference : MonoBehaviour {
 			Reset();
 		}
 
+		if (Input.GetKeyDown(KeyCode.Q)) {
+			canvasGameObject.GetComponent<DrawText>().iText.enabled = !canvasGameObject.GetComponent<DrawText>().iText.enabled;
+		}
+
 		if (mustRedraw)
 			HighlightVertices();
 	}
@@ -135,6 +139,7 @@ public class EuclideanCircumference : MonoBehaviour {
 		i = 0;
 		foreach (GameObject go in GameObject.FindGameObjectsWithTag("line"))
 			Destroy(go);
+		Utils.iterations = 0;
 		Start();
 	}
 
@@ -144,6 +149,7 @@ public class EuclideanCircumference : MonoBehaviour {
 			i = (i + jump) % vertexNumber;
 			if (onStart) onStart = false;
 			if (i == 0) usedColor = ColorExtension.RandomMain(usedColor);
+			Utils.iterations += 1;
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha2)) {
@@ -153,6 +159,7 @@ public class EuclideanCircumference : MonoBehaviour {
 				if (onStart) onStart = false;
 				if (i == 0) usedColor = ColorExtension.RandomMain(usedColor);
 			}
+			Utils.iterations += 2;
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha3)) {
@@ -162,6 +169,7 @@ public class EuclideanCircumference : MonoBehaviour {
 				if (onStart) onStart = false;
 				if (i == 0) usedColor = ColorExtension.RandomMain(usedColor);
 			}
+			Utils.iterations += 3;
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha4)) {
@@ -171,6 +179,7 @@ public class EuclideanCircumference : MonoBehaviour {
 				if (onStart) onStart = false;
 				if (i == 0) usedColor = ColorExtension.RandomMain(usedColor);
 			}
+			Utils.iterations += 4;
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha5)) {
@@ -180,6 +189,7 @@ public class EuclideanCircumference : MonoBehaviour {
 				if (onStart) onStart = false;
 				if (i == 0) usedColor = ColorExtension.RandomMain(usedColor);
 			}
+			Utils.iterations += 5;
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha6)) {
@@ -189,6 +199,7 @@ public class EuclideanCircumference : MonoBehaviour {
 				if (onStart) onStart = false;
 				if (i == 0) usedColor = ColorExtension.RandomMain(usedColor);
 			}
+			Utils.iterations += 6;
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha7)) {
@@ -198,6 +209,7 @@ public class EuclideanCircumference : MonoBehaviour {
 				if (onStart) onStart = false;
 				if (i == 0) usedColor = ColorExtension.RandomMain(usedColor);
 			}
+			Utils.iterations += 7;
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha8)) {
@@ -207,6 +219,7 @@ public class EuclideanCircumference : MonoBehaviour {
 				if (onStart) onStart = false;
 				if (i == 0) usedColor = ColorExtension.RandomMain(usedColor);
 			}
+			Utils.iterations += 8;
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha9)) {
@@ -216,6 +229,7 @@ public class EuclideanCircumference : MonoBehaviour {
 				if (onStart) onStart = false;
 				if (i == 0) usedColor = ColorExtension.RandomMain(usedColor);
 			}
+			Utils.iterations += 9;
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha0)) {
@@ -225,6 +239,7 @@ public class EuclideanCircumference : MonoBehaviour {
 				if (onStart) onStart = false;
 				if (i == 0) usedColor = ColorExtension.RandomMain(usedColor);
 			}
+			Utils.iterations += 10;
 		}
 	}
 
@@ -234,6 +249,7 @@ public class EuclideanCircumference : MonoBehaviour {
 			i = (i + jump) % vertexNumber;
 			if (onStart) onStart = false;
 			if (i == 0) usedColor = ColorExtension.RandomMain(usedColor);
+			Utils.iterations += 1;
 		}
 
 		if (Input.GetKey(KeyCode.Alpha2)) {
@@ -242,6 +258,7 @@ public class EuclideanCircumference : MonoBehaviour {
 				i = (i + jump) % vertexNumber;
 				if (onStart) onStart = false;
 				if (i == 0) usedColor = ColorExtension.RandomMain(usedColor);
+				Utils.iterations += 2;
 			}
 		}
 
@@ -251,6 +268,7 @@ public class EuclideanCircumference : MonoBehaviour {
 				i = (i + jump) % vertexNumber;
 				if (onStart) onStart = false;
 				if (i == 0) usedColor = ColorExtension.RandomMain(usedColor);
+				Utils.iterations += 3;
 			}
 		}
 
@@ -260,6 +278,7 @@ public class EuclideanCircumference : MonoBehaviour {
 				i = (i + jump) % vertexNumber;
 				if (onStart) onStart = false;
 				if (i == 0) usedColor = ColorExtension.RandomMain(usedColor);
+				Utils.iterations += 4;
 			}
 		}
 
@@ -269,6 +288,7 @@ public class EuclideanCircumference : MonoBehaviour {
 				i = (i + jump) % vertexNumber;
 				if (onStart) onStart = false;
 				if (i == 0) usedColor = ColorExtension.RandomMain(usedColor);
+				Utils.iterations += 5;
 			}
 		}
 
@@ -278,6 +298,7 @@ public class EuclideanCircumference : MonoBehaviour {
 				i = (i + jump) % vertexNumber;
 				if (onStart) onStart = false;
 				if (i == 0) usedColor = ColorExtension.RandomMain(usedColor);
+				Utils.iterations += 6;
 			}
 		}
 
@@ -287,6 +308,7 @@ public class EuclideanCircumference : MonoBehaviour {
 				i = (i + jump) % vertexNumber;
 				if (onStart) onStart = false;
 				if (i == 0) usedColor = ColorExtension.RandomMain(usedColor);
+				Utils.iterations += 7;
 			}
 		}
 
@@ -296,6 +318,7 @@ public class EuclideanCircumference : MonoBehaviour {
 				i = (i + jump) % vertexNumber;
 				if (onStart) onStart = false;
 				if (i == 0) usedColor = ColorExtension.RandomMain(usedColor);
+				Utils.iterations += 8;
 			}
 		}
 
@@ -305,6 +328,7 @@ public class EuclideanCircumference : MonoBehaviour {
 				i = (i + jump) % vertexNumber;
 				if (onStart) onStart = false;
 				if (i == 0) usedColor = ColorExtension.RandomMain(usedColor);
+				Utils.iterations += 9;
 			}
 		}
 
@@ -314,6 +338,7 @@ public class EuclideanCircumference : MonoBehaviour {
 				i = (i + jump) % vertexNumber;
 				if (onStart) onStart = false;
 				if (i == 0) usedColor = ColorExtension.RandomMain(usedColor);
+				Utils.iterations += 10;
 			}
 		}
 	}

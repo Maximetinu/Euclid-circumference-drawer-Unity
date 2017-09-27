@@ -3,6 +3,7 @@ using UnityEngine;
 public static class Utils {
 	public static int vertexNumber = 42;
 	public static int jump = 5;
+	public static int iterations = 0;
 
 	// XZ Plane
 	public static Vector3 PointOnCircumference(float radius, double angleInDegrees, Vector3 origin) {
