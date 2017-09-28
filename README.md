@@ -13,8 +13,11 @@ Euclid circumference drawer with Unity Engine. Single scene project. Full keyboa
 - [W] [E]
 - [<-] [->] [D] [F]
 
-## Screenshot
+## Screenshots
 ![Euclid circumference](https://github.com/Maximetinu/Euclid-circumference-simulator-Unity/blob/master/euclid-screenshot.png?raw=true)
+![Euclid circumference](https://github.com/Maximetinu/Euclid-circumference-drawer-Unity/blob/master/euclid-screenshot-2.png?raw=true)
+![Euclid circumference](https://github.com/Maximetinu/Euclid-circumference-drawer-Unity/blob/master/euclid-screenshot-3.png?raw=true)
+
 
 ## Downloads Builds
 - [Standalone PC](https://drive.google.com/file/d/0B1v_vbHwXsjGV3ZrMmhra3RVdTA/view?usp=sharing)
