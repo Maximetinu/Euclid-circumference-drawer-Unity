@@ -20,7 +20,8 @@ Euclid circumference drawer with Unity Engine. Single scene project. Full keyboa
 
 
 ## Downloads Builds
-- [Standalone PC](https://drive.google.com/file/d/0B1v_vbHwXsjGV3ZrMmhra3RVdTA/view?usp=sharing)
+- [Standalone PC 64 bits](https://drive.google.com/file/d/0B1v_vbHwXsjGV3ZrMmhra3RVdTA/view?usp=sharing)
+- [Standalone PC 32 bits](https://drive.google.com/file/d/0B1v_vbHwXsjGWjgxRzI4ZkRfOWc/view?usp=sharing)
 - [WebGL](https://drive.google.com/file/d/0B1v_vbHwXsjGVjhCUUtvb0ZDbE0/view?usp=sharing)
 
 ## How to build
