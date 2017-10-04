@@ -49,7 +49,7 @@ public class DrawText : MonoBehaviour {
 			newText.GetComponent<Text>().enabled = true;
 		}
 		
-		Destroy(this.transform.FindChild("Text(Clone)").gameObject);
+		Destroy(this.transform.Find("Text(Clone)").gameObject);
 	}
 
 	public void HighlightText(int i) {
